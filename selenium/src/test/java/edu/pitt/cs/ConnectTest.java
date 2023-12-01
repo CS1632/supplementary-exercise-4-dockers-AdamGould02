@@ -35,6 +35,9 @@ public class ConnectTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
+  ChromeOptions options = new ChromeOptions();
+  options.addArguments("--headless");
+  driver = new ChromeDriver(options);
   @Before
   public void setUp() {
     driver = new ChromeDriver();
