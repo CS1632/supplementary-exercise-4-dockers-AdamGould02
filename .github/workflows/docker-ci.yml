@@ -1,4 +1,4 @@
-ame: Docker CI
+name: Docker CI
 
 on:
   workflow_dispatch:
