@@ -1,4 +1,4 @@
-name: Docker CI
+ame: Docker CI
 
 on:
   workflow_dispatch:
@@ -39,6 +39,9 @@ jobs:
 
       - name: Launch Web Service
         run: docker-compose up -d
+
+      - name: Check launched
+        run: sh wait-for-webserver.sh
 
       - name: Run Selenium Tests
         run: cd selenium && mvn test
