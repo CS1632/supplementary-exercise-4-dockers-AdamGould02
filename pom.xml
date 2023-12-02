@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.github.wonsunahn</groupId>
-  <artifactId>cs1632-cicd-docker</artifactId>
+  <artifactId>cs1632-cicd-docker-lhs16</artifactId>
   <version>1.2</version>
   <packaging>jar</packaging>
 
@@ -32,6 +32,14 @@
     <developerConnection>scm:git:ssh://github.com:wonsunahn/CS1632_CICD_Docker.git</developerConnection>
     <url>http://github.com/wonsunahn/CS1632_CICD_Docker/tree/main</url>
   </scm>
+
+    <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Apache Maven Packages</name>
+      <url>https://github.com/CS1632/supplementary-exercise-4-ci-cd-pipelines-lslutsky</url>
+    </repository>
+  </distributionManagement>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
